@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--source of icon img: https://www.flaticon.com/free-icon/hand_1077976-->
+    <link rel="icon" href="assets/currencyIcon.png">
+    <title>Currency Converter</title>
+</head>
+<body>
+<div align="center">
+    <!--source of src img: https://www.flaticon.com/free-icon/hand_1077976-->
+    <img src="assets/currencyIcon.png" class="currencyIcon">
+</div>
+
+<div align="center">
+    <div class="currencyContainer">
+        <!--this contains all information and menu-formatting
+        for the currencies in select and drop-down-->
+        <!--add first currency drop-down menu-->
+        <div class="firstCurrency">
+            <p><span id="selectedCurrency"></span> equals</p>
+            <h3 class="resultantCurrency" id="resultantCurrency"> {resultantCurrency}</h3>
+            <!--display current time and date-->
+            <div class="myTimeDate">
+                <span id="myTimeDate"></span>
+            </div>
+            <!--sets the value in the first box to always be 1.-->
+            <input type="number" id="firstAmount" name="firstCurAmount" min="0", value="0">
+            <!--this sets up the drop-down menu for the type of currency in the first box.-->
+            <select id="firstCurrency">
+            </select>
+        </div>
+    </div>
+
+    <!-- space out both drop-down menus, '&nbsp.'-->
+    &nbsp;
+
+    <!--add second currency drop-down menu-->
+    <div class="secondCurrency">
+        <!--sets the value in the second box to always be 1.-->
+        <input type="number" id="secondAmount" name="secondCurAmount" min="0", value="0">
+        <!--this sets up the drop-down menu for the type of currency in the second box.-->
+        <select id="secondCurrency">
+        </select>
+    </div>
+</div>
+</div>
+
+<!--calls 'index.js,' to integrate javascript for the html to reference.-->
+<script src="index.js"></script>
+</body>
+</html>

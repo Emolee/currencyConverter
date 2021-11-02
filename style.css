@@ -1,0 +1,41 @@
+.currencyIcon {
+    width: 100px;
+    height: 100px;
+    alignment: center;
+}
+.currencyContainer {
+    align-content: center;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+.myTimeDate {
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resultantCurrency {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+option{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type=number], select {
+    width: 19%;
+    padding: 8px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
